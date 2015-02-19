@@ -11,7 +11,7 @@ namespace EntityModels
     public class Book
     {
         [DataMember]
-        public int Id { get; set; }
+        public int Id2 { get; set; }
 
         [DataMember]
         public string Title { get; set; }
