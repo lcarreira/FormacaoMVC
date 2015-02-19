@@ -76,6 +76,11 @@
       <DependentUpon>BibliotecaService.svc</DependentUpon>
     </Compile>
     <Compile Include="IBibliotecaService.cs" />
+    <Compile Include="Migrations\201502191633241_First Migration.cs" />
+    <Compile Include="Migrations\201502191633241_First Migration.Designer.cs">
+      <DependentUpon>201502191633241_First Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +100,11 @@
       <Project>{a8c20cb5-9d05-41ed-a8aa-f2994fd60bda}</Project>
       <Name>EntityModels</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201502191633241_First Migration.resx">
+      <DependentUpon>201502191633241_First Migration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
