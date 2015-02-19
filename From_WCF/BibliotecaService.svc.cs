@@ -39,7 +39,7 @@ namespace From_WCF
 
             try
             {
-                using(var context = new BibliotecaDB())
+                using(var context = new BibliotecaDB() )
                 {
                     retVal = context.Books.Add(b);
                     context.SaveChanges();
