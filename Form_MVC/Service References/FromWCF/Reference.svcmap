@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b041c98b-5629-405c-b1b3-9dc920f0d800" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/From_WCF/BibliotecaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BibliotecaService.xsd" MetadataType="Schema" ID="290fb499-670a-4570-9ec4-4025043e8857" SourceId="1" SourceUrl="http://localhost/From_WCF/BibliotecaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="BibliotecaService.wsdl" MetadataType="Wsdl" ID="2d5a8821-1af9-4efa-8cd7-c9898b946bcf" SourceId="1" SourceUrl="http://localhost/From_WCF/BibliotecaService.svc?wsdl" />
+    <MetadataFile FileName="BibliotecaService1.xsd" MetadataType="Schema" ID="e2ebe1c7-a592-419b-a05f-6d43159e253a" SourceId="1" SourceUrl="http://localhost/From_WCF/BibliotecaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="BibliotecaService2.xsd" MetadataType="Schema" ID="abdc1f55-5a19-445a-ad6d-71cf8a921ba0" SourceId="1" SourceUrl="http://localhost/From_WCF/BibliotecaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="BibliotecaService.disco" MetadataType="Disco" ID="7979652d-d831-466b-b1d6-e3941f4c0571" SourceId="1" SourceUrl="http://localhost/From_WCF/BibliotecaService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
