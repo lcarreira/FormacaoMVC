@@ -77,10 +77,27 @@
     <Compile Include="BibliotecaService.svc.cs">
       <DependentUpon>BibliotecaService.svc</DependentUpon>
     </Compile>
+    <Compile Include="EFMappings\BookAuthors_Mapping.cs" />
     <Compile Include="IBibliotecaService.cs" />
     <Compile Include="Migrations\201502191633241_First Migration.cs" />
     <Compile Include="Migrations\201502191633241_First Migration.Designer.cs">
       <DependentUpon>201502191633241_First Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502201025263_book-validation.cs" />
+    <Compile Include="Migrations\201502201025263_book-validation.Designer.cs">
+      <DependentUpon>201502201025263_book-validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502201122114_database-authors.cs" />
+    <Compile Include="Migrations\201502201122114_database-authors.Designer.cs">
+      <DependentUpon>201502201122114_database-authors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502201449531_View_Book_Authors.cs" />
+    <Compile Include="Migrations\201502201449531_View_Book_Authors.Designer.cs">
+      <DependentUpon>201502201449531_View_Book_Authors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502201511143_view_BookAuthors_V2.cs" />
+    <Compile Include="Migrations\201502201511143_view_BookAuthors_V2.Designer.cs">
+      <DependentUpon>201502201511143_view_BookAuthors_V2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,6 +123,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201502191633241_First Migration.resx">
       <DependentUpon>201502191633241_First Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502201025263_book-validation.resx">
+      <DependentUpon>201502201025263_book-validation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502201122114_database-authors.resx">
+      <DependentUpon>201502201122114_database-authors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502201449531_View_Book_Authors.resx">
+      <DependentUpon>201502201449531_View_Book_Authors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502201511143_view_BookAuthors_V2.resx">
+      <DependentUpon>201502201511143_view_BookAuthors_V2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

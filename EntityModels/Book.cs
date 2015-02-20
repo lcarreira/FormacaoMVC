@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntityModels
 {
-    [DataContract]
+    [DataContract(IsReference = true)]
     public class Book
     {
         [DataMember]
@@ -16,19 +16,23 @@ namespace EntityModels
         public int Id { get; set; }
 
         [DataMember]
+        [Required(ErrorMessage="Campo Obrigatório!")]
         public string Title { get; set; }
 
         [DataMember]
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string ISBN { get; set; }
 
         [DataMember]
+        [Required(ErrorMessage = "Campo Obrigatório!")]
+        [Range(0, 2099, ErrorMessage="Ano Inválido!")]
         public int Year { get; set; }
 
         [DataMember]
-        public string Author { get; set; }
-
-        [DataMember]
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public decimal Price { get; set; }
 
+        [DataMember]
+        public virtual ICollection<Author> Authors { get; set; }
     }
 }

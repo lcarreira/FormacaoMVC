@@ -14,20 +14,22 @@ namespace From_WCF
     public class BibliotecaService : IBibliotecaService
     {
 
-        public List<EntityModels.Book> GetBooks()
+        public List<EntityModels.BookAuthors> GetBooks()
         {
-            List<Book> returnVal;
+            List<BookAuthors> returnVal;
 
             try
             {
                 using(var context = new BibliotecaDB())
                 {
-                    returnVal = context.Books.ToList();
+                    returnVal = context.BookAuthors.ToList();
+                        
+                       // .Books.Include("Authors").ToList();
                 }
             }
             catch(Exception ex)
             {
-                returnVal = new List<Book>();
+                returnVal = new List<BookAuthors>();
             }
 
             return returnVal;

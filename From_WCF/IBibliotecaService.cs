@@ -14,7 +14,7 @@ namespace From_WCF
     public interface IBibliotecaService
     {
         [OperationContract]
-        List<Book> GetBooks();
+        List<BookAuthors> GetBooks();
 
         [OperationContract]
         Book InsertBook(Book b);

@@ -16,10 +16,10 @@ namespace Form_MVC.FromWCF {
     public interface IBibliotecaService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBibliotecaService/GetBooks", ReplyAction="http://tempuri.org/IBibliotecaService/GetBooksResponse")]
-        System.Collections.Generic.List<EntityModels.Book> GetBooks();
+        System.Collections.Generic.List<EntityModels.BookAuthors> GetBooks();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBibliotecaService/GetBooks", ReplyAction="http://tempuri.org/IBibliotecaService/GetBooksResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<EntityModels.Book>> GetBooksAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<EntityModels.BookAuthors>> GetBooksAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBibliotecaService/InsertBook", ReplyAction="http://tempuri.org/IBibliotecaService/InsertBookResponse")]
         EntityModels.Book InsertBook(EntityModels.Book b);
@@ -55,11 +55,11 @@ namespace Form_MVC.FromWCF {
                 base(binding, remoteAddress) {
         }
         
-        public System.Collections.Generic.List<EntityModels.Book> GetBooks() {
+        public System.Collections.Generic.List<EntityModels.BookAuthors> GetBooks() {
             return base.Channel.GetBooks();
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<EntityModels.Book>> GetBooksAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<EntityModels.BookAuthors>> GetBooksAsync() {
             return base.Channel.GetBooksAsync();
         }
         
