@@ -149,6 +149,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+<<<<<<< .merge_file_a14520
     <None Include="Service References\FromWCF\BibliotecaService.disco" />
     <None Include="Service References\FromWCF\configuration91.svcinfo" />
     <None Include="Service References\FromWCF\configuration.svcinfo" />
@@ -156,7 +157,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+=======
     <Content Include="StyleSheet1.css" />
+>>>>>>> .merge_file_a17032
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
